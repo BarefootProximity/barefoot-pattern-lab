@@ -1,0 +1,189 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    margin: auto 0;
+}
+
+.menu-toggle {
+    position: fixed;
+    left: 3vw;
+    top: 5vh;
+    z-index: 2;
+}
+
+.hamburger {
+    display: block;
+    height: .5vh;
+    width: 4vw;
+    background-color: darkgrey;
+    margin-bottom: 1.1vh;
+    border-radius: 1vh;
+    transition: opacity .1s, transform .2s, background-color .5s;
+}
+
+.menu {
+    height: 100vh;
+    width: 25vw;
+    background-color: darkgrey;
+    position: fixed;
+    left: -26vw;
+    top: 0;
+    transition: left .7s ;
+    /*z-index: 1;*/
+    /*padding-top: 3vh;*/
+    /*-webkit-box-shadow: 6px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 0px 29px 0px rgba(0, 0, 0, 0.75);*/
+}
+
+.open {
+    left: 0;
+}
+
+.option-holder {
+    position: absolute;
+    bottom: 0;
+    width: 25vw;
+    margin-bottom: 10vh;
+}
+
+.menu-option {
+    font-size: 8vh;
+    margin-top: 7vh;
+    color: white;
+    transition: background-color .8s;
+    cursor: pointer;
+    padding: 2vh;
+}
+
+.menu-option:hover {
+    background-color: grey;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.section-container {
+    margin-top: 20vh;
+}
+
+.header-text {
+    font-size: 5vh;
+    display: block;
+    margin-bottom: 15vh;
+    text-align: center;
+}
+
+.welcome-btn {
+    width: 20vw;
+    height: 10vh;
+    background-color: grey;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 4vh;
+    transition: background-color .8s;
+}
+
+.welcome-btn:hover {
+    background-color: darkgrey;
+}
+
+.welcome-btn-holder {
+    display: inline;
+}
+
+.hide {
+    display: none
+}
+
+.atoms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atom-element {
+    border: 2px solid black;
+    width: 100vw;
+    text-align: center;
+    padding: 4vh;
+}
+
+.atom-name {
+    font-size: 5vh;
+    /*margin-bottom: 4vh;*/
+}
+
+.code-snippet {
+    display: inline-block;
+    margin: 4vh;
+}
+
+.hamburger-open {
+    background-color: white;
+}
+
+.hamburger-open.top {
+    transform: rotate(45deg) translate(1.8vh, 2.4vh);
+}
+
+.hamburger-open.middle {
+    opacity: 0;
+}
+
+.hamburger-open.bottom {
+    transform: rotate(-45deg) translate(0vh, -.4vh);
+}
+
+.hoverable {
+    transition: background-color .7s;
+}
+
+.hoverable:hover {
+    background-color: lightgrey;
+}
+
+
+.arrow {
+  /*z-index: 2;*/
+  background-color: white;
+  transition: width .2s, transform .2s, opacity .5s;
+}
+
+.bottom.arrow {
+  transform: rotate(-45deg) translate(2vh, -2.4vh) !important;
+  width: 2vw !important;
+}
+
+.top.arrow {
+  transform: rotate(45deg) translate(1.4vh, 2vh) !important;
+  width: 2vw !important;
+}
+
+.middle.arrow {
+  transform: translate(0.5vh, -0.4vh) !important;
+  width: 3.1vw !important;
+  opacity: 1;
+}
+
+.atoms-menu-holder {
+  display: flex;
+  position: relative;
+  /*flex-direction: column;;*/
+}
+
+.atoms-menu-holder > span {
+  width: 50%;
+  padding: 10px;
+}
+
+.atom-menu-item {
+  /*font-size: 3vh;
+  margin-top: 3.8vh;*/
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<div class="form-holder">
+    <%= form_for :atom, url: atoms_create_path do |f| %>
+
+    <div class="padding-bottom">
+        <%= f.label :name, class: "form-element" %>
+        <%= f.text_field :name, class: " block form-element" %>
+    </div>
+
+    <div class="padding-bottom">
+        <%= f.label :html, 'HTML', class: "form-element" %>
+        <%= f.text_area :html, size: '30x8', class: " block form-element" %>
+    </div>
+
+    <div class="padding-bottom">
+        <%= f.label :yaml, 'YAML', class: "form-element" %>
+        <%= f.text_area :yaml, size: '30x8', class: " block form-element" %>
+    </div>
+
+    <%= f.submit :class => "button" %>
+
+    <% end %>
+</div>

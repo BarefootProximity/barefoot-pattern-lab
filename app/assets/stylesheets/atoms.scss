@@ -1,0 +1,27 @@
+// Place all the styles related to the Atoms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-holder {
+  margin-top: 14vh;
+  text-align: center;
+  font-size: 1vw;
+}
+.form-element {
+  margin: auto;
+}
+
+.padding-bottom {
+  padding-bottom: 8vh;
+}
+
+.button {
+  border: none;
+  font-size: 2vw;
+  padding: .9vw;
+  border-radius: .9vw;
+}
+
+.block {
+  display: block;
+}
